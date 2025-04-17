@@ -1,0 +1,45 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom Colors */
+@theme {
+  --bg-red-500: #b10f2b;
+}
+
+#button {
+  background-color: var(--bg-red-500);
+  color: #fafafa;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Body Defaults */
+@layer base {
+  body {
+    background-color: #121212;
+  }
+  content {
+    background-color: #121212;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    color: #fafafa;
+  }
+  /* Tailwind v4 + Custom calendar styling */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(2%) saturate(155%) hue-rotate(181deg);
+  }}
+
+@utility {
+  table, th, td {
+    border: 1px solid;
+    border-color: #121212;
+    color: #fafafa;
+  }
+}
+
+
